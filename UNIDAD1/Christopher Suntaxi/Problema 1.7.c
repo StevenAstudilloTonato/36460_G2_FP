@@ -5,7 +5,7 @@
 
 int main() {
     int N, i, R;
-
+    printf("Ingrese un numero para dividir: ");
     scanf("%d", &N);
 
     i = 1;

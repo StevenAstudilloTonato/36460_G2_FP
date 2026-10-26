@@ -1,3 +1,6 @@
+//Ejercicio 8
+//Christopher Suntaxi 
+//26-10-2026
 #include <stdio.h>
 
 int main() {

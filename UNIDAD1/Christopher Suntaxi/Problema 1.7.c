@@ -1,4 +1,4 @@
-//Ejercicio 7
+//Ejercicio 7 - Raiz entera
 //Christopher Suntaxi 
 //26-10-2026
 #include <stdio.h>

@@ -14,7 +14,7 @@ int main()
     // Mostrar el menu hasta seleccionar la opcion de salir
     do
     {
-        printf("\n========== TALLER - MENU ==========\n");
+        printf("TALLER - MENU\n");
         printf("1. Figura (Marco)\n");
         printf("2. Serie de Fibonacci\n");
         printf("3. Salir\n");

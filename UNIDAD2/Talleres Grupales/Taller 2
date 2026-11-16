@@ -52,7 +52,7 @@ int main() {
         case 1:
             printf("\n--- VECTOR ---\n");
             printf("Ingrese el numero de elementos del vector: ");
-             printf("SOLO ENTEROS");
+             printf("\nSOLO ENTEROS\n");
             scanf("%d", &n);
             while(n<=0){
                 printf("ingrese solo numeros positivos: ");

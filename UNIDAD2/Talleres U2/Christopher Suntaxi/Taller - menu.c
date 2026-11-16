@@ -1,12 +1,11 @@
 // Taller - Menu
 // Estudiante: Christopher Suntaxi
 // Fecha: 12/11/2026
-
 #include <stdio.h>
 int main()
 {
     // Declaracion de variables
-    int op = 0;
+    int N = 0;
     int n = 0;
     int fil = 0;
     int i = 0;
@@ -15,15 +14,15 @@ int main()
     // Mostrar el menu hasta seleccionar la opcion de salir
     do
     {
-        printf("TALLER - MENU\n");
-        printf("1. Figura \n");
+        printf("\n========== TALLER - MENU ==========\n");
+        printf("1. Figura (Marco)\n");
         printf("2. Serie de Fibonacci\n");
         printf("3. Salir\n");
         printf("Ingrese opcion: ");
-        scanf("%d", &op);
+        scanf("%d", &N);
 
         // Evaluar la opcion seleccionada
-        switch (op)
+        switch (N)
         {
             case 1:
             {
@@ -131,7 +130,7 @@ int main()
             }
         }
 
-    } while (op != 3);
+    } while (N != 3);
 
     return 0;
 }

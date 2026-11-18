@@ -51,7 +51,7 @@ int main() {
     switch (opcion) {
         case 1:
             printf("\n--- VECTOR ---\n");
-            printf("Ingrese el numero de elementos del vector: "\n);
+            printf("Ingrese el numero de elementos del vector: \n");
              printf("\nSOLO ENTEROS\n");
             scanf("%d", &n);
             while(n<=0){

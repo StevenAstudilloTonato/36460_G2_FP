@@ -1,0 +1,93 @@
+/*El programa permite escoger dos opciones, vectores
+de tamaño n y matriz de tamaño n, son llenados por el usuario
+*/
+
+#include <stdio.h>
+//llenar el vector
+void vector(int vector1[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("Elemento %d: ", i + 1);
+        scanf("%d", &vector1[i]);
+    }
+// imprimir el vector
+    printf("\nVector ingresado: ");
+    for (int i = 0; i < n; i++) {
+        printf("[%d] ", vector1[i]);
+    }
+    printf("\n");
+}
+
+void  Matriz(float matriz1[][100],int fil, int col){
+//se llena la matriz con valores ingresados
+    printf("\nIngrese los valores de la matriz:\n");
+    for (int i = 0; i < fil; i++){
+        for ( int j = 0; j < col; j++){
+            printf("Ingrese valor [%d][%d]: ", i, j);
+            scanf("%f", &matriz1[i][j]);
+        }
+    }
+// imprimir la matriz
+    printf("\nMATRIZ INGRESADA:\n");
+    for (int i = 0; i < fil; i++){
+        for (int j = 0; j < col; j++){
+                printf("%.2f\t", matriz1[i][j]);
+        }
+        printf("\n");
+    }
+}
+int main() {
+    int opcion, n,fil,col,salida;
+    int vector1[100];
+    float matriz1[100][100];
+    printf("BIENVENIDO, ESCOJA UNA DE LAS OPCIONES\n");
+    do{
+    printf("--------------------------------------\n");
+    printf("1. VECTORES\n");
+    printf("2. MATRIZ\n");
+    printf("3. SALIR\n");
+    printf("Opcion: ");
+    scanf("%d", &opcion);
+
+    switch (opcion) {
+        case 1:
+            printf("\n--- VECTOR ---\n");
+            printf("Ingrese el numero de elementos del vector: \n");
+             printf("\nSOLO ENTEROS\n");
+            scanf("%d", &n);
+            while(n<=0){
+                printf("ingrese solo numeros positivos: ");
+                scanf("%d",&n);
+            }
+            vector(vector1, n);
+            break;
+
+        case 2:
+            printf("\nINGRESO DE MATRIZ\n");
+            printf("Ingrese el numero de filas: ");
+            scanf("%d", &fil);
+            while(fil<=0){
+                printf("ingrese solo filas validas: ");
+                scanf("%d",&fil);
+            }
+            printf("Ingrese el numero de columnas: ");
+            scanf("%d", &col);
+            while(col<=0){
+                printf("ingrese solo columnas validas: ");
+                scanf("%d",&col);
+            }
+            Matriz(matriz1,fil,col);
+            break;
+        case 3:
+            printf("Gracias por su visita\n");
+            return 0;
+
+        default:
+            printf("Error: numero incorrecto\n");
+            break;
+    }
+    printf("ingrese 4 para escoger otra opcion o 0 para salir\n");
+    scanf("%d",&salida);
+    }while(salida!=0);
+    printf("Gracias por su visita\n");
+    return 0;
+}

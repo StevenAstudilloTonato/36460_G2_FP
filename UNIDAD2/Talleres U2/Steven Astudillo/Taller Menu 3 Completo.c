@@ -15,7 +15,7 @@ int main() {
                      "Mayo", "Junio", "Julio", "Agosto",
                      "Septiembre", "Octubre", "Noviembre", "Diciembre"};
 
-    // RF-01: Menu principal
+    // Requisito1: Menu principal
     do {
         system("cls");
 
@@ -27,7 +27,7 @@ int main() {
         printf("Ingrese opcion: ");
         scanf("%d", &opcion);
 
-        // RF-02: Validar fecha
+        // Requisito2: Validar fecha
         if (opcion == 1) {
 
             do {
@@ -60,7 +60,7 @@ int main() {
                    dia, meses[mes-1], anio);
         }
 
-        // RF-03: Desplegar serie de letras
+        // Requisito: Desplegar serie de letras
         else if (opcion == 2) {
 
             do {
@@ -95,7 +95,7 @@ int main() {
             printf("\n");
         }
 
-        // RF-04: Desplegar serie de numeros
+        // Requisito4: Desplegar serie de numeros
         else if (opcion == 3) {
 
             do {
@@ -121,7 +121,7 @@ int main() {
             printf("\n");
         }
 
-        // RF-05: Salir
+        // Requisito5: Salir
         else if (opcion == 4) {
             printf("Salir...\n");
         }
